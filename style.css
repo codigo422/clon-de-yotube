@@ -1,8 +1,8 @@
 /*importado desde google font "ROBOTO"*/
 @import url('https://fonts.googleapis.com/css2? family=Roboto:wght@400;500&display=swap');
 * {
-    margin : 0;
-    padding : 0;
+    margin    : 0;
+    padding   : 0;
     box-sizing: border-box;
 }
 
@@ -29,21 +29,73 @@
 --icon-font      : icomoon ;
 
 /*tamaño de textos */
---big-font-size  : 1.25rem; /*equivalente a 18px*/
+--big-font-size   : 1.25rem; /*equivalente a 18px*/
 --normal-font-size: 1rem; /*equivalente a 16px*/
---small-font-size: 0.875rem; /*equivalente a 14px*/
+--small-font-size : 0.875rem; /*equivalente a 14px*/
 --smaller-for-size: 0.75rem; /*equivalente a 12px*/ 
+--font-bold       : 500;
 
+/* otros*/
+--header-height  : 56px;
+--z-tooltip      : 25;
+--z-fixed      : 100;
 
 }
 
 body {
-    font-family: var(--body-font);
-      
+    font-family  : var(--body-font);
+}
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b {
+    font-weight  : var(--font-bold);
+}
 
+button {
+    font-family  : var(--body-font);
+}
+
+img {
+    width        : 100%;
+}
+
+/*---cabecera principal del sitio----*/
+.main-header {
+position       : fixed;
+width          : 100%;
+left           : 0;
+top            : 0;
+display        : flex;
+justify-content: space-between;
+padding        : 0 1rem;
+align-items    : center; 
+height         : var(--header-height);
+background     : red;
+z-index        : var(--z-fixed);
+}
+
+/*---avatar del usuario---*/
+  .user-avatar {
+    --size    : 2rem;
+    width: var(--size);
+    height: var(--size);
+    cursor: pointer;
+    flex: none;
+}
+
+.user-avatar .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 
 }
+
 
 
 
