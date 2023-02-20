@@ -1,4 +1,52 @@
+/*importado desde google font "ROBOTO"*/
+@import url('https://fonts.googleapis.com/css2? family=Roboto:wght@400;500&display=swap');
 * {
     margin : 0;
     padding : 0;
+    box-sizing: border-box;
 }
+
+/*-----variables globales----*/
+:root {
+/*colores base*/
+--accent-color   : #ff0000;
+--grey-color     : #909090;
+--grey-color-alt : #ccc;
+--border-color   : rgba(0, 0, 0, 0.1);
+
+/* colores de fondo */
+--bg-color       : #fff;
+--bg-color-alt   : #f9f9f9;
+--bg-color-active: #e5e5e5;
+
+/*colores de texto*/
+--text-color     : #030303;
+--text-color     : #606060;
+--text-color-white: #fff;
+
+/*fuenetes*/
+--body-font      : roboto , sans-serif; 
+--icon-font      : icomoon ;
+
+/*tamaño de textos */
+--big-font-size  : 1.25rem; /*equivalente a 18px*/
+--normal-font-size: 1rem; /*equivalente a 16px*/
+--small-font-size: 0.875rem; /*equivalente a 14px*/
+--smaller-for-size: 0.75rem; /*equivalente a 12px*/ 
+
+
+}
+
+body {
+    font-family: var(--body-font);
+      
+
+
+
+}
+
+
+
+
+
+
