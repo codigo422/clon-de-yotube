@@ -64,6 +64,17 @@ img {
     width        : 100%;
 }
 
+.place-center {
+    display :flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-container {
+    display : flex;
+    gap : 0.5rem;
+}
+
 /*---cabecera principal del sitio----*/
 .main-header {
 position       : fixed;
@@ -75,8 +86,9 @@ justify-content: space-between;
 padding        : 0 1rem;
 align-items    : center; 
 height         : var(--header-height);
-background     : red;
+/*background     : red; */
 z-index        : var(--z-fixed);
+
 }
 
 /*---avatar del usuario---*/
@@ -88,6 +100,8 @@ z-index        : var(--z-fixed);
     flex: none;
 }
 
+
+
 .user-avatar .image {
     width: 100%;
     height: 100%;
@@ -95,6 +109,30 @@ z-index        : var(--z-fixed);
     border-radius: 50%;
 
 }
+
+
+/*-------botones de accion ---------*/
+.action-buttton {
+    --size : 2.5rem;
+    height: var(--size);
+    width: var(--size);
+    border-radius: 50%;
+    border: 1px solid_transparent;
+    background: none;
+    cursor : pointer;
+    transition: border-color 0.25s;
+}
+
+.action-button::before {
+    color: var(--text-color-alt);
+    font-size : 1,5rem;
+}
+
+.action-button:active {
+background-color: var(--bg-color-active);
+border-color: var(--bg-color-active);
+}
+
 
 
 
