@@ -24,13 +24,13 @@
 --text-color     : #606060;
 --text-color-white: #fff;
 
-/*fuenetes*/
---body-font      : roboto , sans-serif; 
---icon-font      : icomoon ;
+/*fuentes*/
+--body-font      : 'roboto' , sans-serif; 
+--icon-font      : 'icomoon' ;
 
 /*tamaño de textos */
---big-font-size   : 1.25rem; /*equivalente a 18px*/
---normal-font-size: 1rem; /*equivalente a 16px*/
+--big-font-size   : 1.25rem; /* 1.25rem equivalente a 18px*/
+--normal-font-size: 1rem; /*1rem equivalente a 16px*/
 --small-font-size : 0.875rem; /*equivalente a 14px*/
 --smaller-for-size: 0.75rem; /*equivalente a 12px*/ 
 --font-bold       : 500;
@@ -112,7 +112,7 @@ z-index        : var(--z-fixed);
 
 
 /*-------botones de accion ---------*/
-.action-buttton {
+.action-button {
     --size : 2.5rem;
     height: var(--size);
     width: var(--size);
